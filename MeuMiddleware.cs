@@ -1,6 +1,5 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
-
 public class MeuMiddleware
 {
 
@@ -16,7 +15,6 @@ public class MeuMiddleware
         Console.WriteLine("\n\r -------Antes------ \n\r");
         
         await _next(context);
-
 
         Console.WriteLine("\n\r -------Depois------ \n\r");
     }
